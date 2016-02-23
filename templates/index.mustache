@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="/"></base>
+        <meta charset="utf-8">
+        <title>scraping shows</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Artists</th>
+                    <th>Location</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#nodes}}
+                <tr>
+                    <td>{{date}} @ {{time}}</td>
+                    <td>
+                        <ul>
+                            {{#artists}}
+                            <li>{{name}}</li>
+                            {{/artists}}
+                        </ul>
+                    </td>
+                    <td>{{location}}</td>
+                    <td>{{price}}</td>
+                </tr>
+            {{/nodes}}
+            </tbody>
+        </table>
+    </body>
+</html>

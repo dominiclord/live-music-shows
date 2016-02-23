@@ -1,0 +1,10 @@
+.DS_Store
+
+# Configuration files
+config.php
+
+# Package managers
+composer.lock
+composer.phar
+vendor/
+node_modules/
